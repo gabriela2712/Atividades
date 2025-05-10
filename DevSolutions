@@ -53,7 +53,7 @@ section {
     }
     /*formulario*/
     form {
-      background-color:rgb(172, 211, 255);
+      background-color:rgb(177, 208, 244);
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -65,16 +65,25 @@ section {
 
     input, textarea {
       padding: 10px;
-      border: 1px solid rgb(44, 162, 213);
+      border: 1px solid rgb(2, 167, 238);
       border-radius: 4px;
       font-size: 1rem;
-    }
+    } 
+ .logo-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-blue bg-dark">
+    <nav class="navbar navbar-expand-lg-end navbar-blue bg-light">
         
-        <img src="imagem 1.png" alt="" width="45px" >
+        <img src="img.jpeg" alt="" width="45px" id="img">
+    
       
         <div class="logo">DevSolutions</div>
         <nav>
@@ -84,25 +93,45 @@ section {
           <a href="#contato">Contato</a>
         </nav>
       </nav>  
+      
       <section id="sobre">
         <h2>Sobre a DevSolutions</h2>
         <p>A DevSolutions é uma startup inovadora que desenvolve soluções de software personalizadas e oferece consultoria em tecnologia para empresas que desejam evoluir digitalmente.</p>
         <p>Missão:Entregar soluções digitais eficientes que impulsionem a transformação tecnológica de nossos clientes.</p>
         <p>Valores: Inovação, Transparência, Colaboração, Qualidade e Foco no Cliente.</p>
       </section>
-      
+      <img src="img.jpeg" alt="Logo DevSolutions" width="200px" class="logo-img imagem-responsiva">
+
       <section id="servicos">
-        <h2>Serviços</h2>
-        <div class="servicos">
-          <div class="servico">
-            <h3>Desenvolvimento de Software</h3>
-            <p>Soluções sob medida, modernas e escaláveis, criadas com as melhores práticas do mercado.</p>
-          </div>
-          <div class="servico">
-            <h3>Consultoria em Tecnologia</h3>
-            <p>Ajudamos sua empresa a escolher, planejar e implementar as melhores soluções digitais.</p>
-          </div>
-        </div>
+        <section id="servicos">
+  <h2>Serviços Oferecidos</h2>
+
+  <div class="servico">
+    <h2> Desenvolvimento de Software</h2>
+    <p>
+      Oferecemos soluções sob medida que acompanham o crescimento e os objetivos do seu negócio.
+      Nosso time é especializado no desenvolvimento de sistemas web, aplicativos móveis, APIs e
+      integrações com foco em performance, segurança e escalabilidade. Utilizamos metodologias
+      ágeis para garantir entregas contínuas e alinhadas às suas necessidades. Seja para modernizar
+      sistemas legados ou criar novos produtos digitais, entregamos inovação com qualidade.
+    </p>
+  </div>
+
+  <div class="servico">
+    <h2>Consultoria em Tecnologia</h2>
+    <p>
+      Auxiliamos empresas na tomada de decisões estratégicas relacionadas à tecnologia da informação.
+      Com uma abordagem personalizada, identificamos oportunidades de melhoria, otimizamos processos
+      e ajudamos na escolha e implementação de ferramentas tecnológicas. Nossas áreas de atuação incluem
+      transformação digital, cloud computing, segurança da informação, automação de processos e
+      planejamento de infraestrutura. O objetivo é tornar sua TI mais eficiente, segura e preparada para o futuro.
+    </p>
+  </div>
+</div>
+</section>
+
+      </section>
+      </div>
       </section>
       </div>
       <section id="contato">
@@ -115,8 +144,8 @@ section {
           <input type="email" id="email" name="email" required>
     
           <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>br
-          <button type="button" class="btn btn-warning">Enviar</button>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
+         <button type="button" class="btn btn-info">Enviar </button>
         </form>
       </section>
     
