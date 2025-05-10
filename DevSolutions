@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@ img{
   max-width: 100%;
   height: auto;   
 }
-/*section*/
+
 section {
       padding: 40px 20px;
       max-width: 1000px;
@@ -51,7 +51,7 @@ section {
       flex-direction: column;
       gap: 15px;
     }
-    /*formulario*/
+  
     form {
       background-color:rgb(177, 208, 244);
       padding: 20px;
@@ -76,16 +76,20 @@ section {
   max-width: 100%;
   height: auto;
 }
-
+.navbar-custom {
+  background-color: #01204e;
+}
+#logo{
+    color: antiquewhite;
+}
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg-end navbar-blue bg-light">
+    <nav class="navbar navbar-expand-lg-end navbar-custom">
+
         
-        <img src="img.jpeg" alt="" width="45px" id="img">
-    
-      
-        <div class="logo">DevSolutions</div>
+        <img src="img.jpeg" alt="" width="45px" >
+        <div class="logo" id="logo"> DevSolutions </div>
         <nav>
           <a href="#home">Home</a>
           <a href="#sobre">Sobre</a>
@@ -145,7 +149,7 @@ section {
     
           <label for="mensagem">Mensagem:</label>
           <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
-         <button type="button" class="btn btn-info">Enviar </button>
+         <button type="submit" class="btn btn-info">Enviar </button>
         </form>
       </section>
     
@@ -168,4 +172,4 @@ section {
     
      
 </body>
-</html>     
+</html>
